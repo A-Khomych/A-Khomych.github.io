@@ -1,0 +1,1164 @@
+@import 'base/base';
+@import 'base/mixins';
+@import 'base/variables.scss';
+@import url(fonts.css);
+
+
+.headerOne{
+width: 320px;
+margin: 0 auto;
+@media screen and (min-width:768px){
+width: 768px;
+margin: 0 auto;}
+@media screen and (min-width: 1440px){
+width: 1440px;
+margin: 0 auto;
+}
+}
+
+.header_block{
+    width: 320px;
+    height: 540px;
+    background-image: url(../Images/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media screen and (min-width:768px){         
+    width: 100%;
+    height: 700px;
+    background-image: url(../Images/Background768.png);}
+    @media screen and (min-width: 1440px){
+    width: 100%;
+    height: 700px;
+    background-image: url(../Images/Background1440.png);}  
+    &__nav{
+    padding: 29px 84px 97px 84px;
+    @media screen and (min-width: 768px){
+    display: flex;
+    padding: 0;}
+    @media screen and (min-width: 1440px){
+    display: flex;
+    padding: 0;}
+    } 
+    &__minititle1{
+    display: none;
+    @media screen and (min-width: 768px){
+    display: block;
+    font-family: $big-font-family;
+    color: $main-text-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    padding-left: 48px;
+    padding-top: 46px;}
+    @media screen and (min-width: 1440px){
+    font-family: $big-font-family;
+    color: $main-text-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    display: block;
+    padding-top: 46px;
+    margin-left: 248px;}
+    }
+   &__nav1{
+    font-family: $big-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-text-color;
+    text-decoration: none;
+    margin-right: 19px;
+    @media screen and (min-width: 768px){
+    margin-left: 365px;
+    padding-top: 50px;}
+    @media screen and (min-width: 1440px){
+    margin-left: 596px;
+    padding-top: 50px;}
+   }
+   &__nav2{
+    font-family: $big-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-text-color;
+    text-decoration: none;
+    width: 90px;
+    height: 37px;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 8px 14px;
+    @media screen and (min-width: 768px){
+    margin-top: 40px;
+    margin-left: 19px;}
+    @media screen and (min-width: 1440px){
+    margin-left: 6px;
+    margin-top: 40px;}
+   }
+  &__minititle{
+    font-family: $big-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $main-text-color;
+    margin-left: 74px;
+    margin-bottom: 26.5px;
+    @media screen and (min-width: 768px){
+    display: none;
+    }
+    @media screen and (min-width: 1440px){
+    display: none;
+    }
+  }
+  &__title1{
+    font-family: $big-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: $main-text-color;
+    text-align: center;
+    @media screen and (min-width: 768px){
+    font-size: 52px;
+    line-height: 63px;
+    margin-top: 156.5px;
+    }
+    @media screen and (min-width: 1440px){
+    font-size: 52px;
+    line-height: 63px;
+    margin-top: 153.5px;}
+   }
+   &__title2{
+    font-family: $big-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: $main-text-color;
+    text-align: center;
+    @media screen and (min-width: 768px){
+    font-size: 52px;
+    line-height: 63px;
+    }
+    @media screen and (min-width: 1440px){
+    font-size: 52px;
+    line-height: 63px;}
+  }
+  &__discription{
+    font-family: $mini-font-family;
+    color: rgba(247, 243, 242, 1);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 5.5px 20px 15px 20px;
+    text-align: center;
+    @media screen and (min-width: 768px){
+    font-size: 24px;
+    margin-bottom: 45px;}
+    @media screen and (min-width: 1440px){
+    font-size: 24px;
+    margin-bottom: 45px;
+    margin: 20.5px 510px 33px 510px;}
+  }
+  &__button{
+    width: 280px;
+    height: 40px;
+    font-family: $big-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-text-color;
+    border-radius: 40px;
+    background-color: rgba(255, 78, 80, 1);
+    border: 1px solid rgba(255, 78, 80, 1);
+    margin-left: 20px;
+    @media screen and (min-width: 768px){
+    width: 225px;
+    margin-left: 291.5px;}
+    @media screen and (min-width: 1440px){
+    width: 225px;
+    margin-left: 608px;}
+  }
+}
+
+.sectionOne{
+width: 320px;
+margin: 0 auto;
+@media screen and (min-width: 768px){
+width: 768px;
+margin: 0 auto;}
+@media screen and (min-width: 1440px){
+width: 1440px;
+margin: 0 auto;}
+}
+
+.dream_block{
+    width: 320px;
+    height: 783px;
+    margin-top: 35px;
+    @media screen and (min-width: 768px){
+    width: 100%;
+    height: 461px;   
+    margin-top: 95px;}
+    @media screen and (min-width: 1440px){
+    width: 940px;
+    height: 461px;
+    margin-top: 95px;
+    margin-left: 250px;
+    margin-right: 250px;}
+    &__title{
+    font-family: $big-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(68, 68, 68, 1);
+    text-align: center;
+    margin-bottom: 12px;
+    @media screen and (min-width: 768px){
+    margin-top: 0;
+    margin-bottom: 35px;}  
+    @media screen and (min-width: 1440px){
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 26px;
+    line-height: 32px;}
+    }
+    &__step{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;}
+    @media screen and (min-width: 1440px){
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;}
+    }
+    &__step1{
+    width: 320px;
+    height: 240px;
+    background-image: url(../Images/Step\ 1\ image.png);
+    @include step-style;
+    margin-bottom: 12px;
+    @media screen and (min-width: 768px){
+    width: 236px;
+    height: 400px;
+    background-image: url(../Images/Step\ 1\ 768.png);}
+    @media screen and (min-width: 1440px){
+    width: 300px;
+    height: 400px;
+    background-image: url(../Images/Objectstep1\ 1440.png);}
+    }
+    &__button1{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include step-border-style;
+    margin-top: 64px;
+    margin-left: 30px;
+    @media screen and (min-width: 768px){
+    margin-top: 205px;
+    margin-left: 20px;}
+    @media screen and (min-width: 1440px){
+    margin-top: 219px;
+    margin-left: 25px;}
+    }
+    &__title1{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @extend %step-title-style;
+    margin-top: 44px;
+    @media screen and (min-width: 768px){
+    margin-left: 20px;}
+    @media screen and (min-width: 1440px){
+    line-height: 26px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 18px;}
+    }
+    &__discription1{
+    font-family: $mini-font-family;
+    @extend %step-discription-style;
+    margin-top: 27px;
+    @media screen and (min-width: 768px){
+    margin-left: 20px;
+    margin-right: 20px;}
+    @media screen and (min-width: 1440px){
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 27px;}
+    }
+    &__step2{
+    width: 320px;
+    height: 240px;
+    background-image: url(../Images/Step\ 2\ image.png);
+    @include step-style;
+    margin-bottom: 12px;
+    @media screen and (min-width: 768px){
+    width: 236px;
+    height: 400px;
+    background-image: url(../Images/Step\ 12\ image768.png);
+    margin-left: 20px;}
+    @media screen and (min-width: 1440px){
+    width: 300px;
+    height: 400px;
+    margin-left: 20px;
+    background-image: url(../Images/Step\ 2\ 1440.png);}
+    }
+    &__button2{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include step-border-style;
+    margin-top: 100px;
+    margin-left: 30px;
+    @media screen and (min-width: 768px){
+    margin-top: 260px;
+    margin-left: 32px;}
+    @media screen and (min-width: 1440px){
+    margin-top: 250px;
+    margin-left: 25px; }
+    }
+    &__title2{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @extend %step-title-style;
+    margin-top: 27px;
+    @media screen and (min-width: 768px){
+    margin-top: 10px;}
+    @media screen and (min-width: 1440px){
+    line-height: 26px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 22px;}
+    }
+    &__discription2{
+    font-family: $mini-font-family;
+    @extend %step-discription-style;
+    margin-top: 20px;
+    @media screen and (min-width: 768px){
+    margin-left: 20px;
+    margin-right: 20px;}
+    @media screen and (min-width: 1440px){
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;}
+    }
+    &__step3{
+    width: 320px;
+    height: 240px;
+    background-image: url(../Images/Step\ 3\ image.png);
+    @include step-style;
+    margin-bottom: 34px;
+    @media screen and (min-width: 768px){
+    width: 236px;
+    height: 400px;
+    background-image: url(../Images/Step\ 13\ image768.png);
+    margin-left: 20px;}
+    @media screen and (min-width: 1440px){
+    width: 300px;
+    height: 400px;
+    margin-left: 20px;
+    background-image: url(../Images/Step\ 3\ 1440.png);}   
+    }
+    &__button3{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include step-border-style;
+    margin-top: 64px;
+    margin-left: 30px;
+    @media screen and (min-width: 768px){
+    margin-top: 205px;
+    margin-left: 20px;}
+    @media screen and (min-width: 1440px){
+    margin-top: 219px;
+    margin-left: 25px;}
+    }
+    &__title3{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @extend %step-title-style;
+    margin-top: 44px;
+    @media screen and (min-width: 768px){
+    font-family: $big-font-family;
+    color: $main-text-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 14px;
+    margin-left: 30px;
+    margin-right: 40px;;
+    margin-top: 44px;}
+    @media screen and (min-width: 1440px){
+    line-height: 26px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 18px;}
+    }
+    &__discription3{
+    font-family: $mini-font-family;
+    @extend %step-discription-style;
+    margin-top: 25px ;
+    @media screen and (min-width: 768px){
+    margin-left: 20px;
+    margin-right: 20px;}
+    @media screen and  (max-width: 1440px) {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 27px;}
+    }
+}
+ .sectionTwo{
+  width: 320px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px){
+  width: 768px;
+  margin: 0 auto;}
+  @media screen and (min-width: 1440px){
+  width: 1440px;
+  margin: 0 auto;
+  }
+}
+
+    .people_block{
+    width: 320px;
+    height: 1031px;
+    margin-top: 34px;
+    @media screen and (min-width: 768px){
+    width: 492px;
+    height: 605px;
+    margin-top: 95px;
+    margin-left: 138px;
+    margin-right: 138px;}
+    @media screen and (min-width: 1440px) {
+    width: 941px;
+    height: 361px;
+    margin-top: 95px;
+    margin-left: 250px;
+    margin-right: 249px;
+  }
+    &__title{
+    font-family: $big-font-family;
+    color: rgba(68, 68, 68, 1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 34px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    @media screen and  (min-width: 768px){
+    width: 415px;
+    margin-top: 94px;
+    margin-left: 39px;
+    margin-right: 38px;
+    text-align: center;}
+    @media screen and (min-width: 1440px){
+    width: 491px;
+    margin-top: 75px;
+    margin-left: 226px;
+    margin-right: 0;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;}
+    }
+    &__person{
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;}
+    @media screen and (min-width: 1440px){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;}
+    }
+    &__person1{
+    @include person-block;
+    margin-top: 14px;
+    @media screen and (min-width: 768px){
+    width: 236px;
+    height: 205px;
+    margin-top: 35px;
+    margin-left: 0;
+    margin-right: 20px;}
+    @media screen and (min-width: 1440px){
+    width: 221px;
+    margin-top: 35px;
+    margin-left: 0;
+    margin-right: 0;
+    order: -3;}
+    }
+    &__img1{
+    @extend %people-person-img;
+    @media screen and (min-width: 768px){
+    margin-bottom: 17px;
+    margin-left: 55px;
+    margin-right: 55px;}
+    @media screen and (min-width: 1440px){
+    margin-bottom: 17px;
+    margin-left: 55px;
+    margin-right: 55px;}
+    }
+    &__title1{
+    font-family: $big-font-family;
+    @extend %people-person-name;
+    @media screen and (min-width: 768px){
+    width: 236px;
+    height: 38px;
+    margin-bottom: 5px;}
+    @media screen and (min-width: 1440px){
+    margin-bottom: 12px;}
+    }
+    &__description1{
+    font-family: $mini-font-family;
+    @extend %people-person-discr;
+    // margin-top: 22px;
+    @media screen and (min-width: 768px){
+    
+    }
+
+    }
+    &__person2{
+    @include person-block;
+    margin-top: 16px;
+    @media screen and (min-width: 768px){
+    width: 236px;
+    height: 224px;
+    margin-top: 35px;
+    margin-left: 0;
+    margin-right: 0; }
+    @media screen and (min-width: 1440px){
+    width: 221px;
+    height: 224px;
+    margin-top: 35px;
+    margin-left: 19px;
+    margin-right: 0;
+    order: -1;}
+    }
+    &__img2{
+    @extend %people-person-img;
+    @media screen and (min-width: 768px){
+    margin-bottom: 17px;
+    margin-left: 56px;
+    margin-right: 0;}
+    @media screen and (min-width: 1440px){
+    margin-bottom: 17px;
+    margin-left: 57px;
+    margin-right: 57px;}
+    }
+    &__title2{
+    font-family: $big-font-family;
+    @extend %people-person-name;
+    @media screen and (min-width: 768px){
+    margin-bottom: 30px;
+    margin-left: 3px;}
+    @media screen and (min-width: 1440px){
+    margin-bottom: 30px;}
+    }
+    &__description2{
+    font-family: $mini-font-family;
+    @extend %people-person-discr;
+    margin-top: 10px;
+    @media screen and (min-width: 768px){
+    width: 236px;
+    margin-left: 3px;
+    }
+    }
+    &__person3{
+    @include person-block;
+    margin-top: 16px;
+    @media screen and (min-width: 768px){
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 20px;}
+    @media screen and (min-width: 1440px){
+    width: 221px;
+    margin-top: 35px;
+    margin-left: 19px;
+    margin-right: 0;
+    order: -2;}
+    }
+    &__img3{
+    @extend %people-person-img;
+    @media screen and (min-width: 768px){
+    margin-top: -5px;
+    margin-bottom: 18px;
+    margin-left: 57px;
+    margin-right: 57px;}
+    @media screen and (min-width: 1440px){
+    margin-bottom: 18px;
+    margin-left: 57px;
+    margin-right: 57px;}
+    }
+    &__title3{
+    font-family: $big-font-family;
+    @extend %people-person-name;
+    @media screen and (min-width: 768px){
+    margin-top: 0;
+    }
+    }
+    &__description3{
+    font-family: $mini-font-family;
+    @extend %people-person-discr;
+    margin-top: 24px;
+    }
+    &__person4{
+    @include person-block;
+    margin-top: 16px;
+    @media screen and (min-width: 768px){
+    margin-top: 37px;    
+    margin-left: 0;
+    margin-right: 0;}
+    @media screen and (min-width: 1440px){
+    width: 221px;
+    height: 224px;
+    margin-top: 35px;
+    margin-left: 19px;
+    margin-right: 0;}
+    }
+    &__img4{
+    @extend %people-person-img;
+    @media screen and (min-width: 768px){
+    margin-bottom: 17px;
+    margin-left: 58px;
+    margin-right: 58px;}
+    @media screen and (min-width: 1440px){
+    margin-bottom: 17px;
+    margin-left: 58px;
+    margin-right: 58px;}
+    }
+    &__title4{
+    font-family: $big-font-family;
+    @extend %people-person-name;
+    }
+    &__description4{
+    font-family: $mini-font-family;
+    @extend %people-person-discr;
+    margin-top: 24px;
+    }
+    &__button{
+    font-family: $big-font-family;
+    color: rgba(255, 78, 80, 1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    width: 280px;
+    height: 40px;
+    border: 2px solid #FF4E50;
+    border-radius: 40px;
+    background-color: white;
+    margin: 36px 20px 35px 20px;
+    @media screen and (min-width: 768px){
+    width: 180px;
+    margin: 40px 0 0 153px;}
+    @media screen and (min-width: 1440px){
+    width: 180px;
+    margin: 35px 0 0 381px;}   
+}
+}
+
+   .sectionThree{
+    width: 320px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px){
+    width: 768px;
+    margin: 0 auto;}
+    @media screen and (min-width: 1440px){
+    width: 1440px;
+    margin: 0 auto;}
+}
+
+    .discover_block{
+    width: 320px;
+    height: 987px;
+    @media screen and (min-width: 768px){
+    width: 100%;
+    height: 1031px;
+    margin-left: 10px;
+    margin-right: 10px;}
+    @media screen and (min-width: 1440px){
+    width: 940px;
+    height: 1031px;
+    margin-top: 109px;
+    margin-left: 250px;
+    margin-right: 250px;}
+    &__title{
+    font-family: $big-font-family;
+    color: rgba(68, 68, 68, 1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 33px;
+    text-align: center;
+    @media screen and (min-width: 768px){
+    width: 349px;
+    margin-top: 94px;    
+    margin-left: 200px;
+    margin-right: 199px;
+    margin-bottom: 35px;}
+    @media screen and (min-width: 1440px){
+    width: 413px;
+    font-size: 26px;
+    line-height: 32px;}
+    }
+
+   br{
+    @media screen and (min-width: 768px){
+    display: none;
+    }
+    }
+
+    &__foto{
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;}
+    @media screen and (min-width: 1440px){
+    margin-left: 0;
+    margin-right: 0;}
+    }
+    &__one{
+    @include discover-block-style;
+    background-image: url(../Images/Object.png);
+    @media screen and (min-width: 768px){
+    background-image: url(../Images/Object768.png);
+    width: 236px;
+    height: 310px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;}
+    @media screen and (min-width: 1440px){
+    width: 300px;
+    background-image: url(../Images/Object1440.png);}
+    }
+    &__onetitle{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include discover-titel;
+    padding: 37px 47px 46px 47px;
+    @media screen and (min-width: 768px){
+    padding: 117px 47px 46px 47px;}
+    @media screen and (min-width: 1440px){
+    padding: 142px 45px 141px 46px;}      
+    }
+    &__two{
+    @include discover-block-style;
+    background-image: url(../Images/Object2.png);
+    @media screen and (min-width: 768px){
+    background-image: url(../Images/Object2\ 768.png);
+    width: 236px;
+    height: 310px;
+    margin-left: 20px;
+    margin-right: 0;
+    margin-bottom: 0;}
+    @media screen and (min-width: 1440px){
+    width: 300px;
+    background-image: url(../Images/Object2\ 1440.png);}
+    }
+    &__twotitle{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include discover-titel;
+    padding: 33px 47px;
+    @media screen and (min-width: 768px){
+    padding: 125px 15px 0 15px;}
+    @media screen and (min-width: 1440px){
+    padding: 142px 31px 141px 31px;}
+    }
+    &__three{
+    @include discover-block-style;
+    background-image: url(../Images/Object3.png);
+    @media screen and (min-width: 768px){
+    background-image: url(../Images/Object3\ 768.png);
+    width: 236px;
+    height: 310px;
+    margin-right: 0;
+    margin-bottom: 0;}
+    @media screen and (min-width: 1440px){
+    width: 300px;
+    background-image: url(../Images/Object3\ 1440.png);
+    margin-left: 20px;}
+    }
+    &__threetitle{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include discover-titel;
+    padding: 33px 47px;
+    @media screen and (min-width: 768px){
+    padding: 128px 15px 0 15px;}
+    @media screen and (min-width: 1440px){
+    padding: 128px 56px 128px 57px;}
+    }
+    &__four{
+    @include discover-block-style;
+    background-image: url(../Images/Object4.png);
+    @media screen and (min-width: 768px){
+    background-image: url(../Images/Object4\ 768.png);
+    width: 236px;
+    height: 310px;
+    margin: 20px 0 0 0px;}
+    @media screen and (min-width: 1440px){
+    width: 300px;
+    background-image: url(../Images/Object4\ 1440.png);}
+    }
+    &__fourtitle{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include discover-titel;
+    padding: 47px;
+    @media screen and (min-width: 768px){
+    padding: 142px 15px;}
+    @media screen and (min-width: 1440px){
+    padding: 142px 15px;
+    }
+    }
+    &__five{
+    @include discover-block-style;
+    background-image: url(../Images/Object5.png);
+    @media screen and (min-width: 768px){
+    background-image: url(../Images/Object5\ 768.png);
+    width: 492px;
+    height: 310px;
+    margin: 20px 0 0 20px;}
+    @media screen and (min-width: 1440px){
+    width: 620px;
+    background-image: url(../Images/Object5\ 1440.png);}
+    }
+    &__fivetitle{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include discover-titel;
+    padding: 47px 19px 46px 20px;
+    @media screen and (min-width: 768px){
+    padding: 142px 115px 141px 116px;
+    }
+    }
+    &__six{
+    @include discover-block-style;
+    background-image: url(../Images/Object6.png);
+    @media screen and (min-width: 768px){
+    background-image: url(../Images/Object6\ 768.png);
+    width: 492px;
+    height: 310px;
+    margin: 20px 0 0 0;}
+    @media screen and (min-width: 1440px){
+    width: 620px;
+    background-image: url(../Images/Object6\ 1440.png);}
+    }
+    &__sixtitle{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include discover-titel;
+    padding: 47px 11px 46px 12px;
+    @media screen and (min-width: 768px){
+    padding: 142px 107px 141px 108px;
+    }
+    }
+    &__seven{
+    @include discover-block-style;
+    background-image: url(../Images/Object7.png);
+    @media screen and (min-width: 768px){
+    background-image: url(../Images/Object7\ 768.png);
+    width: 236px;
+    height: 310px;
+    margin: 20px 0 0 20px;
+    } 
+    @media screen and (min-width: 1440px){
+    width: 300px;
+    background-image: url(../Images/Object7\ 1440.png);}
+    }
+    &__seventitle{
+    font-family: $big-font-family;
+    color: $main-text-color;
+    @include discover-titel;
+    padding: 47px;
+    @media screen and (min-width: 768px){
+    padding: 142px 15px 141px 15px;
+    }
+    }
+    }
+
+   .sectionFour{
+   width: 320px;
+   margin: 0 auto;
+   @media screen and (min-width: 768px){
+   width: 768px;
+   margin: 0 auto;}
+   @media screen and (min-width: 1440px){
+   width: 1440px;
+   margin: 0 auto;
+   }
+}
+
+    .interest_block{
+    width: 320px;
+    height: 287px;
+    @media screen and (min-width: 768px){
+    width: 768px;
+    height: 258px;   }
+    @media screen and (min-width: 1440px){
+    width: 482px;
+    height: 158px;
+    margin-left: 478px;
+    margin-right: 480px;}
+    &__title{
+    font-family: $big-font-family;
+    color: rgba(68, 68, 68, 1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 35px 20px 9px 20px;
+    text-align: center;
+    @media screen and (min-width: 768px){
+    margin: 95px 231.5px 50px 233.5px;}
+    @media screen and (min-width: 1440px){
+    font-size: 26px;
+    line-height: 32px;
+    margin: 93px 0 53px 0;}
+    }
+    &__discription{
+    font-family: $mini-font-family;
+    color: rgba(102, 102, 102, 1);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+    @media screen and (min-width: 768px){
+    margin-bottom: 25px;}
+    }
+    &__text{
+    width: 280px;
+    height: 40px;
+    border: 1px solid rgba(212, 212, 212, 1);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 768px){
+    width: 299px;
+    margin-left: 143px;
+    margin-right: 10px;}
+    @media screen and (min-width: 1440px){
+    width: 299px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 5px;}
+    }
+    input::placeholder{
+    font-family: $mini-font-family;
+    color:rgba(153, 153, 153, 1);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 138px 10px 15px;
+    @media screen and (min-width: 768px){
+    padding: 14px 157px 10px 15px;}
+    }
+    &__button{
+    width: 280px;
+    height: 40px;
+    background-color: rgba(255, 78, 80, 1);
+    border: 1px solid rgba(255, 78, 80, 1);
+    border-radius: 40px;
+    font-family: $big-font-family;
+    color: $main-text-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    @media screen and (min-width: 768px){
+    width: 172px;
+    margin-left: 0;
+    margin-right: 0;}
+  }
+  }
+
+  .footerOne{
+    width: 320px;
+    margin: 0 auto;
+    @media screen and (min-width: 768px){
+    width: 768px;
+    margin: 0 auto;}
+    @media screen and (min-width: 1440px){
+    width: 1440px;
+    margin: 0 auto;
+    }
+  }
+
+    .footer_block{
+    width: 320px;
+    height: 226px;
+    @media screen and (min-width: 768px){
+    width: 768px;
+    height: 244px;}
+    @media screen and (min-width: 1440px){
+    width: 1440px;
+    height: 260px;
+    margin-top: 105px;}
+    &__navnew1{
+    display: block;
+    @media screen and (min-width: 768px){
+    width: 768px;
+    height: 20px;
+    display: none;}
+    }
+    &__navnew2{
+    display: none;
+    @media screen and (min-width: 768px){
+    width: 768px;
+    height: 20px;
+    display: block;
+    display: flex;}
+    @media screen and (min-width: 1440px){
+    width: 1440px;}
+    }
+    &__titel1{
+    font-family: $big-font-family;
+    color: rgba(255, 78, 80, 1);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 19px 100px 13px 101px;
+    @media screen and (min-width: 768px){
+    height: 20px;
+    margin: 38px 108px 0 39px;}
+    @media screen and (min-width: 1440px){
+    margin: 38px 122px 0 249px;}
+    }
+    &__titel2{
+    font-family: $big-font-family;
+    @extend %footer-title-style;
+    margin-bottom: 1px;
+    @media screen and (min-width: 768px){
+    margin: 40px 0 0 0;}
+    }
+    &__nav1{
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-direction: column;
+    margin-left: 266px;}
+    @media screen and (min-width: 1440px){
+    margin-left: 490px;}
+    }
+    &__link1{
+    font-family: $mini-font-family;
+    @extend %footer-link-style;
+    margin-left: 65px;
+    @media screen and (min-width: 768px){
+    margin-left: 0;
+    margin-top: 35px;}
+    }
+    &__link2{
+    font-family: $mini-font-family;
+    @extend %footer-link-style;
+    margin-left: 12px;
+    @media screen and (min-width: 768px){
+    margin-left: 0;}
+    }
+    &__link3{
+    font-family: $mini-font-family;
+    @extend %footer-link-style;
+    margin-left: 10px;
+    @media screen and (min-width: 768px){
+    margin-left: 0;}
+    }
+    &__link4{
+    font-family: $mini-font-family;
+    @extend %footer-link-style;
+    margin-left: 8px;
+    @media screen and (min-width: 768px){
+    margin-left: 0;}
+    }
+    &__nav2{
+    @media screen and (min-width: 768px){
+    display: flex;
+    flex-direction: column;
+    margin-left: 266px;}
+    @media screen and (min-width: 1440px){
+    margin-left: 490px;}
+    }
+    &__link5{
+    font-family: $mini-font-family;
+    @extend %footer-link-style;
+    margin-left: 85px;
+    @media screen and (min-width: 768px){
+    margin-left: 0;}
+    }
+    &__link6{
+    font-family: $mini-font-family;
+    @extend %footer-link-style;
+    margin-left: 8px;
+    @media screen and (min-width: 768px){
+    margin-left: 0;}
+    }
+    &__navnew3{
+    display: block;
+    @media screen and (min-width: 768px){
+    display: none;}
+    }
+    &__titel3{
+    font-family: $big-font-family;
+    @extend %footer-title-style;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    @media screen and (min-width: 768px){
+    margin-top: 40px;
+    margin-left: 100px;}
+    @media screen and (min-width: 1440px){
+    margin-left: 169px;}
+    }
+    &__titel4{
+    font-family: $big-font-family;
+    color: rgba(204, 204, 204, 1);
+    width: 83px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    margin-left: 120px;
+    margin-right: 117px;
+    @media screen and (min-width: 768px){
+    margin: 40px 30px 7px 148px;}
+    @media screen and (min-width: 1440px){
+    margin-left: 317px;
+    margin-right: 247px;}
+    }
+    &__img{
+    width: 110px;
+    height: 24px;
+    background-image: url(../Images/Bitmap.png);
+    margin-left: 105px;
+    margin-right: 105px;
+    @media screen and (min-width: 768px){
+    margin-left: 618px;
+    margin-right: 40px;
+    margin-top: -150px;}
+    @media screen and (min-width: 1440px){
+     margin-left: 1080px;
+     margin-right: 250px;}
+    }
+  }

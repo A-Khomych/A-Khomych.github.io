@@ -1,0 +1,67 @@
+$big-font-family: 'Montserrat';
+
+$mini-font-family:'Roboto';
+
+$main-text-color: white;
+
+%step-title-style{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 14px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+%step-discription-style{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(227, 227, 227, 1);
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+%people-person-img{
+    width: 120px;
+    height: 120px;
+    margin-left: 57px;
+    margin-right: 57px;
+    margin-bottom: 14px;
+}
+
+%people-person-name{
+    color: rgba(68, 68, 68, 1);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+%people-person-discr{
+    color: rgba(102, 102, 102, 1);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+}
+
+%footer-title-style{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+%footer-link-style{
+    color: rgba(153, 153, 153, 1);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+}
